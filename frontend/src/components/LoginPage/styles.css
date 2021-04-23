@@ -1,0 +1,59 @@
+.wrapper {
+    position: absolute;
+    background: url(https://images.unsplash.com/photo-1566215550877-c82c02139b3e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1949&q=80);
+    z-index: 1;
+    background-size: contain;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.login-wrapper {
+    background: white;
+    width: 25rem;
+    border-radius: 5px;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 3rem;
+    padding-top: 1rem;
+}
+.login.button {
+    width: 50%;
+    height: 25px;
+    margin: 0 auto;
+    margin-top: 15px;
+    text-align: center;
+    color: white;
+    line-height: 1.5rem;
+    padding: 5px;
+}
+
+.login-page-title {
+    display: flex;
+    justify-content: center;
+}
+
+h2#login-title {
+    border-right: lightgrey solid;
+    padding: 10px;
+}
+
+h2#register-title {
+    padding: 10px;
+}
+
+.inactive {
+    color: lightgrey;
+}
+
+.inactive:hover {
+    color: black;
+    cursor: pointer;
+}
+

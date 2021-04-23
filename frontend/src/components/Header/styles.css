@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@500&family=Open+Sans:wght@700&display=swap');
+
+.title {
+    font-family: 'Lexend', sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 2rem;
+    font-weight: 900;
+    color: #F3F7F0;
+}
+
+.site-description {
+    text-align: center;
+    color: slategrey;
+}
+
+.header-section {
+    height: 12%;
+    z-index: 2;
+}
+

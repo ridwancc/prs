@@ -1,0 +1,37 @@
+.account-container {
+    background-color: #202225;
+    width: 45%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    box-shadow: 0px 0px 0px 1000px rgba(0, 0, 0, 0.6);
+    padding: 1rem;
+    text-align: center;
+    color: white;
+    padding-bottom: 3rem;
+}
+
+.grid-container {
+    border-right: 1px solid dimgrey;
+    border-left: 1px solid grey;
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.1fr 0.1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      ". ."
+  }
+
+  .grid-title {
+      padding: 0.6rem;
+      background: dimgrey;
+  }
+
+  .grid-item {
+    padding: 0.2rem;
+    border-bottom: 1px solid dimgrey;
+}

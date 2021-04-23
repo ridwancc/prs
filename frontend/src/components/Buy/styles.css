@@ -1,0 +1,78 @@
+
+.buy {
+    height: 25px;
+    width: 40px;
+    margin: 12px;
+    border-radius: 10%;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQEAYAAABPYyMiAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAABmJLR0QAAAAAAAD5Q7t/AAAACXBIWXMAAABgAAAAYADwa0LPAAAAB3RJTUUH5QMYFC4H1hyyEgAAAmtJREFUSMe1lU9IFHEUx9+bGUOL3FlsF4QUIyJKKUgQ7GIHMcqDEmkeAslj2LUWghYqF/IgpWToITASLJEykN2DLSSuf0r3krBESS5kiLqzv9kZ+82qM69DuYIx6Mb4Lj9+P76P9/m+x48H2hOjXfVEo/pp4w5jiqJX8FsqJJN6sXFEvTs2BvscuPOBiIgIUV9O16nPl5bgEl4Wn1ZVmWH6bobX150qLLVuLkqtui79Q4SIiERaI+9ggdlZ+EDNZjgWEx12Tr1S8+aVlRXBVuGDerwwNeVw3W2jDdCEbyMRWwB04QjcmJzcLwA6CdPUGQyinSAxQlZiJD//QKGxIB5WFDgBhXBGdGwS0jREqL2kxLYDBbUoFNSmUuCCFzgUizlmfRkeoX9uLq86r9odiMeF3fToh7PQ69woELAAQsHg1n1XACjDQRpaXXWsA354TVdDoW0gm+ClvFS5VlS0WY/z4vz4OHjhPsQDAYhDgr4SZVtXGKDrFDSMg4u5ZXJTf/+f726akl1COpKOCD26LvbkHoMGRHwG+WDV1NBHSACZZrYA1nG8iXMbGwAw9qNjcPCvTW4LIMuyLMvJpBbVolq0vBw/5XSaelcXfaN7eMrjEZmwJjzu7rbW6KV5UVV35uMXGBaguJiGsY7etbRQPfVD7cwMImLRec73TJ5q42KqrbJS0zhnjChznuO3Vdnns8vTaoxD6pu+voz+J1fYgmUxxhhjbveeAZQEWUrC5dK9/BV7GIttLSt14tcDdaKiwi5P93JZPdrYqA3wCOtKp7X3/LMqjY5u7ZpsR5gJssgiS5Ky0+fk/HfB/Y7f7uY9so4gJl8AAAAldEVYdGRhdGU6Y3JlYXRlADIwMjEtMDMtMjRUMjA6NDY6MDcrMDA6MDAh4aE9AAAAJXRFWHRkYXRlOm1vZGlmeQAyMDIxLTAzLTI0VDIwOjQ2OjA3KzAwOjAwULwZgQAAAABJRU5ErkJggg==);
+}
+
+.buy-container {
+    background-color: white;
+    width: 45%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    box-shadow: 0px 0px 0px 1000px rgba(0, 0, 0, 0.6);
+    padding: 1rem;
+}
+
+.close {
+    height: 50px;
+    width: 50px;
+    background-image: url('../../images/cancel.png');
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+h3.buy-title {
+    display: inline-block;
+}
+
+.buy-form {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 0 auto;
+}
+
+label {
+    display: inline-flex;
+    margin: 2px;
+}
+
+.submit {
+    width: 50%;
+    padding: 10px;
+    margin: 20px auto;
+    color: white;
+    text-transform: uppercase;
+}
+
+input[type="text"], input[type="password"], input[type="email"] {
+    background-color: #F3F7F0;
+    text-align: center;
+    border: none;
+    font-size: 1rem;
+    padding: 10px;
+    margin-bottom: 1rem;
+}
+
+input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focus {
+    outline: none;
+    filter: contrast(0.8);
+}
+
+.register-vehicle {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 12px;
+}
+
+input[type="submit"] {
+    border: none;
+}

@@ -1,0 +1,35 @@
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #202225;
+}
+
+.button {
+  background: #3185FC;
+  background-repeat: no-repeat;
+  background-position: center;
+  transform: scale(1.1);
+}
+
+.button:hover {
+  cursor: pointer;
+  transform: scale(1.08);
+}
+
+.button:active {
+  transform: scale(1);
+}
+
+::-webkit-scrollbar {
+  width: 13px;
+  height: 13px;
+ }
+ ::-webkit-scrollbar-thumb {
+  background: #ffcc00;
+  border-radius: 5px;
+ }
+
+ ::-webkit-scrollbar-track{
+  background: #202225;
+ }

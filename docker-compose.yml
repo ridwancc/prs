@@ -1,0 +1,63 @@
+version: '3.7'
+
+services:
+  # App backend service
+  app-server:
+    build:
+      context: backend 
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080" 
+    restart: always
+    depends_on: 
+      - db 
+    links:
+      - db
+    environment: 
+      SPRING_DATASOURCE_URL: jdbc:postgresql://db:5432/webservices
+      SPRING_DATASOURCE_USERNAME: postgres
+      SPRING_DATASOURCE_PASSWORD: postgres     
+    networks: 
+      - backend
+      - frontend
+
+  # Frontend Service 
+  app-client:
+    build:
+      context: frontend 
+      dockerfile: Dockerfile
+      args:
+        REACT_APP_API_BASE_URL: http://127.0.0.1:8080/api
+    ports:
+      - "80:80" 
+    restart: always
+    depends_on:
+      - app-server
+    networks:
+      - frontend  
+
+  # Database Service 
+  db:
+    image: postgres:latest
+    ports:
+      - "5432:5432"
+    restart: always
+    environment:
+      POSTGRES_DB: webservices
+      POSTGRES_USERNAME: postgres
+      POSTGRES_PASSWORD: postgres
+    volumes:
+      - db-data:/var/lib/postgres
+      - ./db/insertdata.sql:/docker-entrypoint-initdb.d/create_tables.sql
+
+    networks:
+      - backend  
+  
+# Volumes
+volumes:
+  db-data:
+
+# Networks 
+networks:
+  backend:
+  frontend:    
