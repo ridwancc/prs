@@ -13,7 +13,7 @@ git clone https://github.com/ridwancc/prs.git
 Build:
 
 ```bash
-docker-compose --build --no-cache
+docker-compose build --no-cache
 ```
 
 Start:
